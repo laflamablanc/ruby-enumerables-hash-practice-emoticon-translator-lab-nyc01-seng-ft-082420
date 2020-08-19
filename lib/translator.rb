@@ -1,13 +1,10 @@
 # require modules here
 require "yaml"
 
-emoticons = YAML.load_file('lib/emoticons.yml')
-
-puts emoticons
-
 
 def load_library
   # code goes here
+  emoticons = YAML.load_file('lib/emoticons.yml')
   
 end
 
