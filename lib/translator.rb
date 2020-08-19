@@ -12,7 +12,9 @@ def load_library
       else
         final_hash[outer_key][:japanese] = emoji
       end
-  
+    end
+  end
+  final_hash
 end
 
 def get_japanese_emoticon
