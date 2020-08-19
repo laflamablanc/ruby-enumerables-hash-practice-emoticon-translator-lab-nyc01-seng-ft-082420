@@ -6,7 +6,6 @@ require "pry"
 def load_library(filepath)
   # code goes here
   emoticons = YAML.load_file(filepath)
-  binding.pry
   new_emojis = emoticons.each_with_object({}) do |(outer_key, emoji_array), final_hash|
     emoji_array.each_with_index do |emoji, idx|
         if !final_hash[outer_key]
