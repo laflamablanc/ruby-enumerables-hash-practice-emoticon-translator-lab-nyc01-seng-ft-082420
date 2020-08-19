@@ -20,7 +20,7 @@ def load_library(filepath)
     
     end
   end
-  puts new_emojis
+  return new_emojis
 end
 
 def get_japanese_emoticon
