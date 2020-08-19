@@ -7,7 +7,7 @@ def load_library
   emoticons = YAML.load_file('lib/emoticons.yml')
   emoticons.each_with_object do |(outer_key, emoji_hash), final_hash]
     emoji_hash.each do |emoji|
-      
+      final_hash[]
   
 end
 
