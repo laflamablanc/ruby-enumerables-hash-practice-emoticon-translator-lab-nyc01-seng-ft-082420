@@ -26,23 +26,27 @@ end
 def get_japanese_emoticon(filename, emoji)
 
   myhash = load_library(filename)
+  message = "Sorry, that emoticon was not found"
   myhash.each do |outer_key, hash|
     hash.each do |inner_key, char|
       if char == emoji
-        return myhash[outer_key][:japanese]
+        message = myhash[outer_key][:japanese]
       end
     end
   end
+  message
 end
 
 def get_english_meaning(filename, jap_emoji)
   myhash = load_library(filename)
+  message = "Sorry, that emoticon was not found"
   myhash.each do |outer_key, hash|
     hash.each do |inner_key, char|
       if char == jap_emoji
-        return outer_key
+        message = outer_key
       end
     end
   end
+  message
 end
 
