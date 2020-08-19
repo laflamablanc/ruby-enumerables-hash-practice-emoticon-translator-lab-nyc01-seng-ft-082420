@@ -23,9 +23,10 @@ def load_library(filepath)
   return new_emojis
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(filename, emoji)
   # code goes here
   myhash = load_library(filename)
+  
 end
 
 def get_english_meaning
