@@ -26,8 +26,8 @@ end
 def get_japanese_emoticon(filename, emoji)
   # code goes here
   myhash = load_library(filename)
-  myhash.each do (outer_key, hash)
-    has.each do |char|
+  myhash.each do |outer_key, hash|
+    hash.each do |char|
       if char == emoji
         return myhash[outer_key][:japanese]
       end
