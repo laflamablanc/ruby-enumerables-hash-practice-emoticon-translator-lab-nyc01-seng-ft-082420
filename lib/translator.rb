@@ -8,7 +8,7 @@ def load_library
   emoticons.each_with_object do |(outer_key, emoji_hash), final_hash]
     emoji_hash.each_with_index do |emoji, idx|
       if idx % 2 == 0 
-        final_hash[]
+        final_hash[outer_key]
   
 end
 
